@@ -1,0 +1,106 @@
+.catalog{
+    background: url('/img/catalog.png') 0px 170px repeat-x, url('/img/catalog_2.png') 0px 320px repeat-x, url('/img/catalog_3.png') 0px 700px repeat-x, ;
+    
+    
+    ;
+    padding-bottom: 140px;
+    &__tabs{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        list-style-type: none;
+        margin-top: 99px;
+        
+    } 
+    &__tab{
+        background-color: #fff;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+        width: 380px;
+        height: 398px;
+        border-radius: 10px;
+        transition: 0.6s all;
+        cursor: pointer;
+        margin-left: 30px;
+        &_active{
+            background-color: #59BBF2;
+            transition: 0.6s all;
+            color: #fff;
+        }
+        &:hover{
+            box-shadow: 3px 3px 20px #59BBF2;
+            transition: 0.6s all;
+        } 
+        .tab__wrapper{
+            display: flex;
+            flex-direction: column;
+            padding-top: 100px;
+            .tab_title{
+                font-size: 22px;
+                padding-top: 20px;
+                text-align: center;
+            }
+            .tab_subtitle{
+                font-size: 14px;
+                text-align: center;
+            }
+            .tab_icon{
+                margin: 0 0 0 20%;
+                width: 193px;
+                height: 193px;
+                border-radius: 100%;
+                background-color: #E7F7FF;
+                transition: 0.6s all;
+                &:hover{
+                    background-color: #fff;
+                    transition: 0.6s all;
+        
+                } 
+                img{
+                    margin-top: 25%;
+                    margin-left: 40px;
+                    
+                }
+            }
+        }
+    }
+    .catalog__content_title{
+        text-align: center;
+        margin-top: 120px;
+        font-size: 40px;
+    }
+    .catalog__content{
+        display: none;
+        flex-direction: row;
+        flex-wrap:wrap;
+        justify-content: space-between;
+        margin-top: 70px;
+        //text-align: center;
+        margin-left: 40px;
+        &_active{
+            display: flex;
+        }
+    }
+
+    .catalog__content__advantages{
+        display: flex;
+        flex-direction: row;
+        width: 320px;
+        margin-bottom: 70px;
+        .adanteges__title{
+            .catalog__content__advantages_subtitle{
+                font-size: 18px;
+                font-weight: 700;
+                
+            }
+            
+        }
+        .advantages__img{
+            img{
+                margin-right: 31px;
+            }
+        }
+    }
+    
+
+    
+}

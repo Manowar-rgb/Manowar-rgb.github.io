@@ -1,0 +1,294 @@
+@media (max-width: 1025px){
+    .catalog{
+        
+        .catalog__tab{
+            .tab__wrapper{
+                .tab_title{ 
+                }
+                .tab_icon{
+                    margin: 0 0 0 13%;
+                }
+            }
+        }
+        .catalog__content{
+            margin-left: 0px;
+        }
+    }
+    .header{
+        flex-direction: column;
+        text-align: center;
+        nav{text-align: center; margin: 0 auto;}
+        .menu{
+            margin-top: 20px;
+            font-size: 18px;
+            text-align: center;
+        }
+        .subheader {
+            margin-top: 50px;
+            text-align: center;
+            width: 100%;
+        }
+    }
+    .comprate__icon{
+        display: none;
+    }
+}
+
+
+@media (max-width: 991px){
+
+    .catalog{
+        .catalog__tab{
+            width: 372px;
+            .tab__wrapper{
+                .tab_title{
+                    font-size: 20px;
+                }
+                .tab_icon{
+                    margin: 0 0 0 24%;
+                }
+            }
+        }
+        .catalog__content{
+            margin-left: 0px;
+        }
+
+    
+    
+        
+    }
+    .header{
+        flex-direction: column;
+        text-align: center;
+        .menu{
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    }
+    .menu__link{
+        font-size: 18px;
+    }
+    .subheader {
+        margin-top: 50px;
+        text-align: center;
+        width: 100%;
+    }
+    .catalog{
+        display: flex;
+        
+        .catalog__tabs {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            list-style-type: none;
+            margin-top: 99px;
+            padding: 120px;
+            .catalog__tab {
+                margin-top: 20px;
+            }
+        }
+        .catalog__content_active {
+            display: flex;
+            padding: 120px;
+        }
+    }
+
+    
+}
+
+
+@media (max-width: 767px){
+
+    .carousel{
+        margin-top: -180px;
+        &__title {
+            text-align: center;
+            font-size: 11px;
+        }
+        .slider{
+            .slider__item{
+                ._imageSlider{
+                    width: 286px;
+                    height: 286px; 
+                }
+            }
+        }
+
+    }
+    .header{
+        flex-direction: column;
+        text-align: center;
+        .header__logo{
+            margin-bottom: 10px;
+        }
+        .header_contacs{
+            button{
+                margin-top: 10px;
+            }
+        }
+    }
+    .subheader {
+        margin-top: 92px;
+        width: 100%;
+        .promo__header{
+            text-align: center;
+            font-size: 28px;
+            line-height: 32px;
+        }
+        .promo__subheader {
+            text-align: center;
+        }
+    }
+
+    .menu{
+        position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-right: 0px;
+        top: -20px;
+        left: -100%;
+        width: 50%;
+        height: 100vh;
+        padding: 20px 15px;
+        background-color: rgb(255, 209, 85, .8);
+        transition: 0.6s all;
+        padding-left: 50px;
+        &_active{
+            left: 0;
+        }
+        &_item{
+            padding-right: 0;
+            border: none;
+            margin: 10px 0;
+            &_link{
+                font-size: 20px;
+            }
+        }
+    }
+
+    .hamburger{
+        display: block;
+        position: absolute;
+        left: 90%;
+        transform: translateY(-50%);
+        width: 26px;
+        height: 12px;
+        span{
+            display: block;
+            height: 2px;
+            width: 100%;
+            background-color: #000;
+            margin-bottom: 2px;
+            transition: 0.5s all;
+        }
+         &_active{
+             span{
+                 margin-bottom: -2px;
+                 &:nth-child(1){
+                     transform: translateY(3px) rotate(-45deg);
+                 }
+                 &:nth-child(2){
+                     display: none;
+                 }
+                 &:nth-child(3){
+                     transform: translateY(3px) rotate(45deg);
+                 }
+             }
+         }
+    }
+    .catalog{
+        display: flex;
+        
+        .catalog__tabs {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            list-style-type: none;
+            margin-top: 99px;
+            padding: 0px;
+            .catalog__tab {
+                margin-top: 20px;
+            }
+        }
+        .catalog__content_active {
+            display: flex;
+            padding: 0px;
+        }
+    }
+}
+
+@media (max-width: 426px){
+    .catalog{
+        .catalog__tab{
+            width: 300px;
+            .tab__wrapper{
+                .tab_title{
+                    font-size: 20px;
+                }
+                .tab_icon{
+                    margin: 0 0 0 17%;
+                }
+            }
+        }
+        .catalog__content{
+            margin-left: 0px;
+        }
+    }
+    .carousel {
+        .slider{
+            .carousel__title{
+                font-size: 28px;
+            }
+            .slider__item{
+                img{
+                    width: 300px;
+                    height: 300px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 375px){
+
+    .catalog{
+        
+        .catalog__tab{
+            width: 272px;
+            .tab__wrapper{
+                .tab_title{
+                    font-size: 20px;
+                }
+                .tab_icon{
+                    margin: 0 0 0 13%;
+                }
+            }
+        }
+        .catalog__content{
+            margin-left: 0px;
+        }
+
+    
+    
+        
+    }
+    .slider{
+        position: relative;
+        padding: 0px 50px;
+        margin-top: 95px;
+        .slider__item{
+            ._imageSlider{
+                width: 280px;
+                height: 280px;
+            }
+        }
+        .slick-arrow{
+            position: absolute;
+            top: 50%;
+            z-index: 10%;
+            font-size: 0;
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
