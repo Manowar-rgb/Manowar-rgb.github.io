@@ -30,11 +30,11 @@ $(document).ready(function(){
                 settings: {slidesToShow: 1, arrows: false},
 
             },{
-                breakpoint: 426,
+                breakpoint: 425,
                 settings: {slidesToShow: 1, arrows: false},
 
             },{
-                breakpoint: 992,
+                breakpoint: 991,
                 settings: {slidesToShow: 3, arrows: false},
 
             },
@@ -47,6 +47,8 @@ $(document).ready(function(){
 
 
 window.addEventListener('DOMContentLoaded', () => {
+    
+
     const menu = document.querySelector('.menu'),
     menuItem = document.querySelectorAll('.menu_item'),
     hamburger = document.querySelector('.hamburger');
@@ -62,4 +64,37 @@ window.addEventListener('DOMContentLoaded', () => {
             menu.classList.toggle('menu_active');
         });
     });
+
+    //slider
+    const slides = document.querySelectorAll('.offer__slide'),
+          next = document.querySelector('.offer__slider-next'),
+          prev = document.querySelector('.offer__slider-prev');
+    let slideIndex = 1;
+
+    
+    function showSlides(n){
+        if (n > slides.length){
+            slideIndex = 1;
+        }
+        if (n < slides.length){
+            slideIndex = 2;
+        }
+
+        slides.forEach(item => item.style.display = 'none');
+
+        slides[slideIndex - 1].style.display = 'block';
+    }
+    function plusSlides(n){
+        showSlides(slideIndex += n);
+    }
+
+    prev.addEventListener('click', () => {
+        plusSlides(-1);
+    });
+    next.addEventListener('click', () => {
+        plusSlides(1);
+    });
+    showSlides(slideIndex);
+    
+
 });

@@ -1,12 +1,14 @@
-@import 'element/font';
-@import 'blocs/header';
-@import 'element/button';
-@import 'media';
-@import 'blocs/catalog';
-@import 'blocs/carousel';
-@import 'blocs/comprate';
-
 *{
     font-family: 'GothamPro';
     font-weight: 700;
 }
+
+@import 'element/font';
+@import 'blocs/header';
+@import 'element/button';
+
+@import 'blocs/catalog';
+@import 'blocs/carousel';
+@import 'blocs/comparison';
+@import 'blocs/carousel__two';
+@import 'media';
