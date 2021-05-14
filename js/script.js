@@ -71,12 +71,13 @@ window.addEventListener('DOMContentLoaded', () => {
           prev = document.querySelector('.offer__slider-prev');
     let slideIndex = 1;
 
-    
+    console.log(slides.length)
     function showSlides(n){
+        console.log(n);
         if (n > slides.length){
             slideIndex = 1;
         }
-        if (n < slides.length){
+        if (n < 1){
             slideIndex = 2;
         }
 
